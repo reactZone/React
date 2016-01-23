@@ -1,24 +1,39 @@
-.ez-led{
-    font-size : 40px;
-    background : #70d355;
+.ez-led {
+    font-size: 40px;
+    background: #70d355;
     width: 300px;
-    height:60px;
-    line-height : 60px;
-    text-align : right;
-    padding : 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    padding: 10px;
 }
-.ez-lamp{
-    display : inline-block;
-    margin : 5px;
-    width : 30px;
-    height : 30px;
-    border-radius : 50%;
+
+.ez-lamp {
+    display: inline-block;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
-.ez-lamp.on{
-    opacity : 1;
-    background : -webkit-radial-gradient(30% 30%,white 5%,red 95%);
+
+.ez-lamp.on {
+    opacity: 1;
+    background: -webkit-radial-gradient(30% 30%, white 5%, red 95%);
 }
-.ez-lamp.off{
-    opacity : 0.5;
-    background : -webkit-radial-gradient(30% 30%,#888 5%,red 95%);
+
+.ez-lamp.off {
+    opacity: 0.5;
+    background: -webkit-radial-gradient(30% 30%, #888 5%, red 95%);
+}
+
+.ez-digi-clock {
+    font-family: LED;
+    font-size: 40px;
+    background: #70d355;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    padding: 10px;
+    letter-spacing: 5px;
 }
