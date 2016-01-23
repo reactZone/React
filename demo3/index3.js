@@ -15,7 +15,7 @@
 
         /**
          * 定义组件 React.createClass
-         * @parm ({render:function(){}}}
+         * @parm 至少需要一个有效的render({render:function(){}}}
          * @return  react组件
          */
         var EzLedComp = React.createClass({
