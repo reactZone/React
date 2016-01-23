@@ -1,6 +1,6 @@
 #注意事项
-1.react的内容要放在body内 置于容器的下面
-2.使用jsx 一定要将将script的type定义成 text/jsx并引入JSXTransformer.js
+# 1.react的内容要放在body内 置于容器的下面
+# 2.使用jsx 一定要将将script的type定义成 text/jsx并引入JSXTransformer.js
 
 
 #demo
