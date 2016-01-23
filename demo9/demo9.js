@@ -22,23 +22,15 @@
             //点击按钮时执行搜索
             search : function(){
                 //使用FindDOMNOde()方法读取用户输入值
-                var el = React.findDOMNode(this.refs.q),
-                    city = el.value;
-
+                var city = React.findDOMNode(this.refs.q).value;
+                   alert(city);
                 //设置为等待状态
                 this.setState({waiting:true,info:null});
             },
             render : function(){
-                var waitingEl,infoEl;
-
+                var waitingEl;
                 if(this.state.waiting) //是否需要显示等待动画？
                     waitingEl = <img src="http://www.hubwiz.com/course/552762019964049d1872fc88/img/waiting.gif"/>;
-
-                if(this.state.info)
-                    infoEl = <pre>
-                                      搜索中.....
-                                    </pre>;
-
                 return 	<div className="ez-weather">
                     <div className="ez-search">
                         <input type="text" defaultValue="beijing" ref="q"
@@ -46,7 +38,6 @@
                         <button onClick={this.search}>search</button>
                     </div>
                     {waitingEl}
-                    {infoEl}
                 </div>;
             }
         });
