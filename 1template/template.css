@@ -1,0 +1,9 @@
+.ez-led{
+    font-size : 40px;
+    background : #70d355;
+    width: 300px;
+    height:60px;
+    line-height : 60px;
+    text-align : right;
+    padding : 10px;
+}
