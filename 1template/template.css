@@ -37,3 +37,20 @@
     padding: 10px;
     letter-spacing: 5px;
 }
+
+.ez-weather{
+    background : black;
+    color:white;
+    padding:10px;
+}
+.ez-search{
+    display: flex;
+    flex-flow:row nowrap;
+}
+.ez-search input{
+    flex : 1 0 auto;
+}
+.ez-search button{
+    width:100px;
+    margin:0px 10px;
+}
