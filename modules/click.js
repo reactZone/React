@@ -17,6 +17,8 @@ var MessageBox = React.createClass({
         alert('你刚才点了我一下。。。');
     },
     render: function () {
+        var SubMessages = [];
+
         // 这里有两个坑 1.onClick的C是大写，2 this.alertMe 不需要括号 加括号会报一大坨的错！！！！！！
         return ( <button onClick={this.alertMe}>确定</button> )
     }
