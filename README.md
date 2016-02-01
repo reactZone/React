@@ -15,7 +15,57 @@
 ```
 # 5. 组件嵌套的时候 
 # 6. 循环   1 for   然后component.push
+# 7.使用props 创建一个组件 接收 props  在使用组件的时候传入属性
+这是一个组件
+```
+var HelloMessage = React.createClass({
+    render:function(){
+        return (
+            <div>hello {this.props.name}</div>
+        )
+    }
+})
+```
+开始使用组件
+```
+    React.render(<HelloMessage name="xiaomo" />);
+```
 
+# 8.使用state  和refs
+```
+var App = React.createClass({
+    //初始化
+    getInitialState:function(){
+        return {
+            userInput:""
+        };
+    }
+    //当输入框内容发生变化时进行的操作
+    handlerChange:function(e){
+        this.setState{userInput:e.target.value}
+    }
+    //当点击div的时候进行的操作
+    clearAndFocusInput:function(){
+        this.setState{userInput:""},
+        function(){
+            // this.refs.theInput.getDOMNode 可以取到 ref= "theInput"的dom节点
+            this.refs.theInput.getDOMNode.focus();
+        }
+    }
+});
+},
+render:function(){
+    return (
+        <div onClick={this.clearAndFocusInput}>
+        清除并获取焦点
+        <input ref="theInput" value={this.state.userInput} onChange = {this.handlerChange}
+        </div>
+    )
+    
+}
+
+
+```
 <hr>
 
 #demo
