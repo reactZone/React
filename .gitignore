@@ -1,4 +1,9 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea
+.DS_STORE
+*.log
+
 node_modules
-npm*log*
+
+dist
+coverage
+
+.idea/
